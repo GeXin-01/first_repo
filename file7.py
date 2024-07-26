@@ -21,4 +21,5 @@ class option(FinancialInstrument):
 
      def set_implied_volatility(self, value:float) -> None:
           if value < 0:
+               raise ValueError ("iv can not be negtive!")
                
